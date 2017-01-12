@@ -17,6 +17,9 @@ public class P1MainStage extends Stage {
     private void init() {
         root = new GridPane();
         root.setPrefSize(500, 500);
+        
+        root.add(P1ImageView.getInstance(), 0, 0);
+        
         setScene(new Scene(root));
         
         show();
